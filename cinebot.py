@@ -51,7 +51,7 @@ async def encuesta_mensual():
         await canal.send(poll=poll)
         await canal.send("@here ¡Recuerden votar por los generos que mas les tinca para este mes!")
         
-    if ahora.day == 1:
+    elif ahora.day == 1:
         canal = bot.get_channel(CANAL_ID)
 
         poll = discord.Poll(
@@ -67,7 +67,7 @@ async def encuesta_mensual():
         await canal.send(poll=poll)
         await canal.send("@here ¡Recuerden votar para la semana que mas les acomode!")
         
-    if ahora.day == 2:
+    elif ahora.day == 2:
         canal = bot.get_channel(CANAL_ID)
 
         poll = discord.Poll(
@@ -82,7 +82,7 @@ async def encuesta_mensual():
         await canal.send(poll=poll)
         await canal.send("@here ¡Recuerden votar por el dia que mas les acomode")
         
-    if ahora.day == 3:
+    elif ahora.day == 3:
         canal = bot.get_channel(CANAL_ID)
 
         poll = discord.Poll(
